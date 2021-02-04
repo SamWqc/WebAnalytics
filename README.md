@@ -23,5 +23,5 @@ a)统一名字的格式(保证同一个人的名字只有一种格式)
 
 b)将Prof的名字编码为数字;
 
-2.生成name-num对应的字典；train.csv数据保存在EdMot/input/cora_edges.csv
+2.生成name-num对应的字典；train.csv数据保存在EdMot/input/cora_edges.csv; 更新后的数据保存在converted.csv中
 
