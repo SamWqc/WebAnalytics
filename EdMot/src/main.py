@@ -11,6 +11,8 @@ def main():
     args = parameter_parser()
     tab_printer(args)
     graph = graph_reader(args.edge_path)
+    graph.remove_nodes_from([node for node in graph.nodes() if graph.degree()[node]<=1])
+
     model = EdMot(graph, args.components, args.cutoff)
     memberships = model.fit()
     membership_saver(args.membership_path, memberships)
