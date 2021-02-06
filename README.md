@@ -25,3 +25,11 @@ b)将Prof的名字编码为数字;
 
 2.生成name-num对应的字典；train.csv数据保存在EdMot/input/cora_edges.csv; 更新后的数据保存在converted.csv中
 
+## Node_Content_Embedding.ipynb
+1.对每个Researcher的PaperTitle以及Description进行Doc2Vec,作为Node的Atrribute
+
+2.用SINE--Node2vec对node进行embedding
+
+3.k-means算法进行聚类，将Reseacher分为3类;
+
+4.SpectralEmbedding对vector进行降维; 展示聚类效果
